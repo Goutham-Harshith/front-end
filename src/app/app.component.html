@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>I'm working!</h2>
+      <button class="btn btn-success" (click)="makeRequest()">Fetch Details</button>
+    </div>
+  </div>
+  <br><br>
+  <table class="table table-bordered" *ngIf="flag">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{address}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
